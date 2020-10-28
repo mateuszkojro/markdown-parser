@@ -6,27 +6,33 @@
     <title>Markdown for dumies</title>
 
     <link id="icon" href="resources/icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body onload="load_icon()">
     <h1>Hello Bro!</h1>
-    <pre id="compiled_code"></pre>
 
-    <table>
-      <tr>
-        <td>
-          <textarea oninput="compile()" id="text" cols="100" rows="20">
-          </textarea>
-        </td>
-        <td>
-          <div id="compiled_html"></div>
-        </td>
-      </tr>
-    </table>
-    <br />
-    <button onclick="compile()">Compile</button>
+    <div class="ui big purple message">
+      <code id="compiled_code"></code>
+    </div>
+
+    <div class="ui form">
+      <div class="field">
+        <textarea id="text" oninput="compile()"></textarea>
+      </div>
+    </div>
+    <div id="compiled_html" class="ui huge info message"></div>
     <br />
 
     <script src="out/script.js"></script>

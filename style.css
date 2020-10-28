@@ -1,5 +1,5 @@
 pre {
-  background: #f4f4f4;
+  background: #fff9f9;
   border: 1px solid #ddd;
   border-left: 3px solid #f36d33;
   color: #666;
@@ -14,7 +14,7 @@ pre {
   display: block;
   word-wrap: break-word;
 }
-
+/*
 h1 {
   color: white;
 }
@@ -22,7 +22,6 @@ h1 {
 p {
   color: white;
 }
-
 #compiled_html {
   margin: 1em;
   min-width: 100;
@@ -31,9 +30,9 @@ p {
   color: white;
   border-style: solid;
 }
-
+*/
 body {
   margin-left: 10%;
   margin-right: 10%;
-  background: #444444;
+  background: #ffffff;
 }
