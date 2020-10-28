@@ -1,0 +1,39 @@
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+#compiled_html {
+  margin: 1em;
+  min-width: 100;
+  min-height: 100;
+  padding: 0.5em;
+  color: white;
+  border-style: solid;
+}
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  background: #444444;
+}

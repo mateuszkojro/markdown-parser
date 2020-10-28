@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown for dumies</title>
+
+    <link id="icon" href="resources/icon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="load_icon()">
+    <h1>Hello Bro!</h1>
+    <pre id="compiled_code"></pre>
+
+    <table>
+      <tr>
+        <td>
+          <textarea oninput="compile()" id="text" cols="100" rows="20">
+          </textarea>
+        </td>
+        <td>
+          <div id="compiled_html"></div>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <button onclick="compile()">Compile</button>
+    <br />
+
+    <script src="out/script.js"></script>
+  </body>
+</html>
