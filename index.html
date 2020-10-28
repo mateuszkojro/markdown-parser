@@ -18,23 +18,26 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
+    <script src="out/script.js"></script>
   </head>
 
-  <body onload="load_icon()">
+  <body onload="compile()">
     <h1>Hello Bro!</h1>
 
-    <div class="ui big purple message">
+    <div class="ui big pink message">
       <code id="compiled_code"></code>
     </div>
 
     <div class="ui form">
       <div class="field">
-        <textarea id="text" oninput="compile()"></textarea>
+        <textarea id="text" oninput="compile()">
+        # Header 1 
+        ## Header 2
+        ![image](https://picsum.photos/400 "sample title")</textarea
+        >
       </div>
     </div>
     <div id="compiled_html" class="ui huge info message"></div>
     <br />
-
-    <script src="out/script.js"></script>
   </body>
 </html>

@@ -3,10 +3,6 @@
 const compiled_code = "compiled_code";
 const compiled_html = "compiled_html";
 
-//(document.getElementById("text") as HTMLTextAreaElement).rows =
-(document.getElementById("text") as HTMLInputElement).width =
-  window.innerWidth / 2;
-
 function compile() {
   const machine = new state_machine();
   show(machine.process(get_text()));
