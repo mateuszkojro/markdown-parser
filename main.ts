@@ -3,9 +3,12 @@
 const compiled_code = "compiled_code";
 const compiled_html = "compiled_html";
 
+//console.group("timing");
 function compile() {
+  console.time("compiling markdown in:");
   const machine = new state_machine();
   show(machine.process(get_text()));
+  console.timeEnd("compiling markdown in:");
 }
 
 function show(text: string) {
