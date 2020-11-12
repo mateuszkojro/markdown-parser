@@ -18,6 +18,7 @@ function change_editor(text:string){
 function show(text: string) {
   show_code(text);
   //show_compiled(text);
+  // TODO i need to store compiled markdown and render it every time
   change_editor(text);
 }
 
