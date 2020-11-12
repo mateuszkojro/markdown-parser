@@ -30,14 +30,13 @@
 
     <div class="ui form">
       <div class="field">
-        <textarea id="text" oninput="compile()">
-        # Header 1 
-        ## Header 2
-        ![image](https://picsum.photos/400 "sample title")</textarea
-        >
       </div>
     </div>
-    <div id="compiled_html" class="ui huge info message"></div>
+    <div id="text"  onfocusout="compile()"  contenteditable="true"  class="ui huge info message">
+              # Header 1
+              ## Header 2
+              ![image](https://picsum.photos/400 "sample title")
+    </div>
     <br />
   </body>
 </html>

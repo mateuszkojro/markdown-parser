@@ -7,9 +7,12 @@ function compile() {
     show(machine.process(get_text()));
     console.timeEnd("compiling markdown in:");
 }
+function change_editor(text) {
+    return document.getElementById("text").innerHTML = text;
+}
 function show(text) {
     show_code(text);
-    show_compiled(text);
+    change_editor(text);
 }
 function load_icon() {
     if (Math.floor(Math.random() * 10) == 0)
@@ -18,7 +21,7 @@ function load_icon() {
         document.getElementById("icon").setAttribute("href", "resourses/icon_legal.png");
 }
 function get_text() {
-    return document.getElementById("text").value;
+    return document.getElementById("text").innerText;
 }
 function show_code(code) {
     const out_el = document.getElementById(compiled_code);

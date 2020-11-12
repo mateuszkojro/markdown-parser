@@ -11,9 +11,14 @@ function compile() {
   console.timeEnd("compiling markdown in:");
 }
 
+function change_editor(text:string){
+  return (document.getElementById("text") as HTMLDivElement).innerHTML = text;
+}
+
 function show(text: string) {
   show_code(text);
-  show_compiled(text);
+  //show_compiled(text);
+  change_editor(text);
 }
 
 function load_icon(): void {
@@ -31,7 +36,7 @@ function load_icon(): void {
 
 // pobiera text z textboxa
 function get_text() {
-  return (document.getElementById("text") as HTMLInputElement).value;
+  return (document.getElementById("text") as HTMLDivElement).innerText;
 }
 
 // Wyswietl kod wygenerowany przez nasz parser
